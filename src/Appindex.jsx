@@ -3,11 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import './assets/css/styleindex.css'
+import { useNavigate } from 'react-router-dom';
 
 export default function Appindex() {
 
   const [efect, Setefec] = useState(true)
   //console.log(efect);
+
+  const navigate = useNavigate();
 
   const clickefect = () => {
     //Setefec(true)
@@ -15,6 +18,7 @@ export default function Appindex() {
     setTimeout(() => {
       ///termina de cargar
       Setefec(true);
+      navigate('/formlxs');
     }, 5000);
   }
 
@@ -48,8 +52,8 @@ export default function Appindex() {
                     <h1>Vite + React</h1>
 
                     <p>
-                      Test de Servidor Windows 10
-                    </p>
+                      Test de Servidor Windows 10 
+                    </p> 
 
                   </div>
                   <div className="divider">By</div>

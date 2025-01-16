@@ -1,6 +1,7 @@
 
 import { Routes, Route, useNavigate, Link, useLocation } from 'react-router-dom';
 import Appindex from '../Appindex';
+import Iniciox from '../components/Iniciox';
 //import Cookies from 'js-cookie';
 //import Protector_ from './protector';
 
@@ -16,9 +17,9 @@ export default function Navigateroute() {
             <Routes location={location} key={location.pathname}>
                 {/* rutas libres */}
                 <Route path="/" index element={<Appindex></Appindex>} />
+                <Route path="/formlxs" index element={<Iniciox />} />
                 <Route path="/inicio" index element={<Navbar></Navbar>} />
-                <Route path="/ini3" index element={<Navbar></Navbar>} />
-                <Route path="/ini2" index element={<Home />} />
+                <Route path="/ini3" index element={<Navbar></Navbar>} />                
                 <Route path="/404" element={<NotFound />} />
 
              
