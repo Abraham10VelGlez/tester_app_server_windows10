@@ -14,6 +14,7 @@ export default {
   ], // Agrega DaisyUI como plugin
   //plugins: [daisyui, require('@tailwindcss/typography'), ], // Agrega DaisyUI como plugin
   daisyui: {
+    //themes: ["valentine"],
     //themes: ["dark"], // Elige los temas que quieres habilitar
     themes: true, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
     //darkTheme: "dark", // name of one of the included themes for dark mode
